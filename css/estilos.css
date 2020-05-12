@@ -3,7 +3,7 @@
 body {
   background-image: url("https://abrilveja.files.wordpress.com/2020/03/coronavirus-wp.jpg");
   /*O vh depois do 100 faz com que o background se adapte ao tamanho de qq tela*/
-  background-size: auto 100vh;
+  background-size: auto 200vh;
   font-family: Arial;
   height: 100vh;
 }
@@ -11,6 +11,16 @@ body {
 /*O comando .menu chama o conteúdo do arquivo HTML*/
 .menu {
   background-color: orange;
+}
+
+h1 {
+  margin: 20px;
+  border: 4px solid brown;
+  padding: 10px;
+  height: 60px;
+  width: 240px;
+  box-shadow: 100px, 100px, 100px, 100px, pink;
+  box-sizing: border-box;
 }
 
 .menu ul {
