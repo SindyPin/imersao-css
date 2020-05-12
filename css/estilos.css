@@ -1,0 +1,42 @@
+/*O CSS deixa o site mais presentável. Muda o tipo e a cor do fundo e das letras e permite add imagens*/
+
+body {
+  background-image: url("https://abrilveja.files.wordpress.com/2020/03/coronavirus-wp.jpg");
+  /*O vh depois do 100 faz com que o background se adapte ao tamanho de qq tela*/
+  background-size: auto 100vh;
+  font-family: Arial;
+  height: 100vh;
+}
+
+/*O comando .menu chama o conteúdo do arquivo HTML*/
+.menu {
+  background-color: orange;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu li {
+  list-style: none;
+}
+
+a {
+  color: teal;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.site-title,
+.site-subtitle {
+  color: black;
+  text-align: justify;
+}
+
+.site-subtitle {
+  font-style: italic;
+}
