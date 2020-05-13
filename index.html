@@ -1,17 +1,30 @@
+<!--HTML = CONTEÚDO DO SITE-->
+
+<!--DOCTYPE = Indica para o navegador qual versão do HTML será usada, neste caso será a última versão-->
 <!DOCTYPE html>
+<!--lang='en' - linguagem em inglês-->
 <html lang="en">
+  <!--O head apresenta informação necessária para o desenvolvedor e não para o usuário final-->
   <head>
+    <!--UTF-8 = acentos, letras em outros sistemas de escrita-->
     <meta charset="UTF-8" />
+    <!--Para que o site seja adaptado em todas as telas de diferentes tamanhos
+    vou usar o tag meta: vp-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--title = é o título do site-->
     <title>Sindy</title>
+    <!--A seguinte linha de comando diz que o site carregará o arquivo css presente no caminho especificado
+    (caminho do arquivo presente no meu computador)-->
     <link rel="stylesheet" href="css/estilos.css" />
   </head>
+  <!--O body será o copo do site e deve conter pelo menos uma tag "filha"-->
   <body>
-    <!--O HTML dá o significado a um site: cria as palavras de entrada, os títulos, os subtítulos e os links-->
+    <!--Encabeçalho-->
     <header>
-      <!--Encabeçalho-->
       <nav class="menu">
+        <!--ul = cria listas-->
         <ul>
-          <!--Lista de Links (Unordered List)-->
+          <!--li = itens da lista (Lista de Links = Unordered List)-->
           <!--Lista item 1 a=ancora tag do sub-link 1-->
           <li><a href="#">Sobre</a></li>
           <!--Lista item 2-->
@@ -20,9 +33,47 @@
           <li><a href="#">Contato</a></li>
         </ul>
       </nav>
-      <h1 class="site-title">Sindy Piñero</h1>
-      <!--Eu crio o nome "site-title e site subtitle"-->
-      <h2 class="site-subtitle">Web Developer</h2>
+      <!--div = tag container-->
+      <div>
+        <!--Eu crio o nome "site-title e site subtitle"-->
+        <h1 class="site-title">Sindy Piñero</h1>
+        <h2 class="site-subtitle">Jr. Web Developer</h2>
+      </div>
     </header>
+    <section>
+      <h3>Portfólio</h3>
+      <figure>
+        <img
+          class="img-portfolio"
+          src="https://northerntimes.nl/wp-content/uploads/2020/03/1280px-3D_medical_animation_coronavirus_structure-1.jpg"
+          alt="About SARS-CoV-2"
+        />
+        <figcaption>About SARS-CoV-2</figcaption>
+      </figure>
+      <figure>
+        <img
+          class="img-portfolio"
+          src="https://qph.fs.quoracdn.net/main-qimg-dcebeb4981bab72654ffe4c271cde86a"
+          alt="SARS-CoV-2 Structure"
+        />
+        <figcaption>SARS-CoV-2 Structure</figcaption>
+      </figure>
+      <figure>
+        <img
+          class="img-portfolio"
+          src="https://ars.els-cdn.com/content/image/1-s2.0-S1568997220300926-gr4.jpg"
+          alt="COVID-19 Infection: Inflamation Process"
+        />
+        <figcaption>COVID-19 Infection: Inflamation Process</figcaption>
+      </figure>
+      <figure>
+        <img
+          class="img-portfolio"
+          src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41418-020-0530-3/MediaObjects/41418_2020_530_Fig1_HTML.png"
+          alt="COVID-19 Infection: Immune Responses"
+        />
+        <figcaption>COVID-19 Infection: Immune Responses</figcaption>
+      </figure>
+    </section>
   </body>
 </html>

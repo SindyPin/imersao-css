@@ -1,4 +1,11 @@
-/*O CSS deixa o site mais presentável. Muda o tipo e a cor do fundo e das letras e permite add imagens*/
+/*CSS = ESTILO do SITE*/
+
+/* O primeiro parâmetro que deve ser passado é o da margem do box de todo o site*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
   background-image: url("https://abrilveja.files.wordpress.com/2020/03/coronavirus-wp.jpg");
@@ -6,23 +13,72 @@ body {
   background-size: auto 200vh;
   font-family: Arial;
   height: 100vh;
+  /*  font-size: 12px;*/
 }
+
+/*Se a tela for de pelo menos 400px, os estilos contidos neste arquivo serão carregados*/
+@media (min-width: 400px) {
+  font-size: 14px;
+}
+
+@media (min-width: 600px) {
+  font-size: 18px;
+}
+
+/*Os seguintes comandos de menu (menu ul e menu li) centralizam a header*/
+/*header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}*/
 
 /*O comando .menu chama o conteúdo do arquivo HTML*/
 .menu {
   background-color: orange;
+  position: fixed;
+  width: 100vw;
+  top: 0px;
 }
 
 h1 {
-  margin: 20px;
-  border: 4px solid brown;
+  border: 4px solid #cd5c5c;
+  box-sizing: border-box;
+  /* 1ro parâmetro: a sombra se move para direita (+) ou para esquerda (-)
+  2do parâmetro: sombra se move para cima (-) ou para baixo (+)
+  3ro parâmetro: quão esfumaçada é a sombra
+  4to parâmetro: a dimensão da sombra
+  5to parâmetro: cor da sombra
+  Ver códigos da paleta de cores em: https://htmlcolorcodes.com/color-names/ */
+  box-shadow: 50px 10px 50px 10px rgb(196, 83, 102);
+  /*A margem é dada na seguinte ordem: acima esquerda embaixo direita do comoutador*/
+  margin: 80px 30px 20px 30px;
   padding: 10px;
   height: 60px;
-  width: 240px;
-  box-shadow: 100px, 100px, 100px, 100px, pink;
-  box-sizing: border-box;
+  width: 230px;
 }
 
+h2 {
+  border: 4px solid #ff4500;
+  box-sizing: border-box;
+  box-shadow: 50px 10px 50px 10px rgb(185, 111, 123);
+  margin: 80px 30px 20px 30px;
+  padding: 10px;
+  height: 50px;
+  width: 240px;
+}
+
+h3 {
+  border: 4px solid #ffd700;
+  box-sizing: border-box;
+  box-shadow: 50px 10px 50px 10px rgb(241, 214, 59);
+  margin: 80px 30px 50px 30px;
+  padding: 10px;
+  height: 50px;
+  width: 240px;
+}
+
+/*O display flex faz com que cada informação do site seja uma coluna*/
 .menu ul {
   display: flex;
   justify-content: space-around;
@@ -33,7 +89,8 @@ h1 {
 }
 
 a {
-  color: teal;
+  color: black;
+  font-weight: bolder;
   text-decoration: none;
 }
 
@@ -41,12 +98,35 @@ a:hover {
   text-decoration: underline;
 }
 
+/*O "display block" resolve o problema do pedding da caixa fantasma 
+das palavras dos links. Caso contrário, quando for aumentar o tamanho do padding,
+os links ficam fora da linha ocupando o espaço do background da tela*/
+.menu a {
+  /*background-color: antiquewhite;*/
+  display: block;
+  padding: 10px 20px;
+}
+
 .site-title,
 .site-subtitle {
   color: black;
-  text-align: justify;
+}
+
+/*O 4em muda o tamanho de letra conforme ao tamanho da tela 
+(4x o tamanho definido na body tag)*/
+.site-title {
+  font-size: 2em;
 }
 
 .site-subtitle {
   font-style: italic;
+}
+
+.site-subtitle {
+  font-size: 1.5em;
+}
+
+.img-portfolio {
+  height: 200px;
+  width: 300px;
 }
