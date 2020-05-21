@@ -103,7 +103,7 @@ h1 {
   width: 689px;
   color: white;
   font-family: "Amita", cursive;
-  font-size: 4.5em;
+  font-size: 4em;
   transform: scale(0.2) translateY(40vh);
   opacity: 0;
   animation: 1s ease 500ms animacaoTitulo forwards;
@@ -194,6 +194,15 @@ h3 {
   border-radius: 60%;
 }
 
+h4 {
+  margin: 0px 0px 0px 750px;
+  height: 60px;
+  width: 700px;
+  font-size: 2em;
+  color: #f5f5dc;
+  font-family: Verdana;
+}
+
 /* The actual timeline (the vertical ruler) */
 .timeline {
   position: relative;
@@ -255,7 +264,7 @@ h3 {
   right: 30px;
   border: medium solid #f5f5dc;
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent #ffe4e1;
+  border-color: transparent transparent transparent #f5f5dc;
 }
 
 /* Add arrows to the right container (pointing left) */
@@ -269,7 +278,7 @@ h3 {
   left: 30px;
   border: medium solid #f5f5dc;
   border-width: 10px 10px 10px 0;
-  border-color: transparent #ffe4e1 transparent transparent;
+  border-color: transparent #f5f5dc transparent transparent;
 }
 
 /* Fix the circle for containers on the right side */
@@ -317,6 +326,15 @@ h3 {
   .right {
     left: 0%;
   }
+}
+
+h5 {
+  margin: 0px 0px 0px 40px;
+  height: 60px;
+  width: 700px;
+  font-size: 2em;
+  color: #ffe4e1;
+  font-family: Verdana;
 }
 
 /* The actual timeline (the vertical ruler) */
