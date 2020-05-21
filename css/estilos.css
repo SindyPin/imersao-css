@@ -40,6 +40,30 @@ body {
   background-image: url("../css/fundo4.jpg");
   background-repeat: no-repeat;
   /*O vh depois do 150 faz com que o background se adapte ao tamanho de qq tela*/
+  background-size: auto 150vh;
+  height: 100vh;
+}
+
+#background5 {
+  background-image: url("../css/fundo5.jpg");
+  background-repeat: no-repeat;
+  /*O vh depois do 150 faz com que o background se adapte ao tamanho de qq tela*/
+  background-size: auto 150vh;
+  height: 100vh;
+}
+
+#background6 {
+  background-image: url("../css/fundo6.jpg");
+  background-repeat: no-repeat;
+  /*O vh depois do 150 faz com que o background se adapte ao tamanho de qq tela*/
+  background-size: auto 150vh;
+  height: 100vh;
+}
+
+#background7 {
+  background-image: url("../css/fundo7.jpg");
+  background-repeat: no-repeat;
+  /*O vh depois do 150 faz com que o background se adapte ao tamanho de qq tela*/
   background-size: auto 100vh;
   height: 100vh;
 }
